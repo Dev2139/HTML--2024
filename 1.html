@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Books and Authors</title>
+  <style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    color: #4a4a4a;
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 5px;
+  }
+  
+  /* Favorite Books */
+  .favorite-books li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .favorite-books li:last-child {
+    border-bottom: none;
+  }
+  
+  .favorite-books img {
+    width: 60px;
+    height: 80px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Individual Colors for Each Book */
+  .favorite-books li:nth-child(1) .book-title {
+    color: #E57373; /* Soft Red */
+  }
+  
+  .favorite-books li:nth-child(1) .book-author {
+    color: #EF9A9A;
+  }
+  
+  .favorite-books li:nth-child(2) .book-title {
+    color: #64B5F6; /* Light Blue */
+  }
+  
+  .favorite-books li:nth-child(2) .book-author {
+    color: #90CAF9;
+  }
+  
+  .favorite-books li:nth-child(3) .book-title {
+    color: #81C784; /* Soft Green */
+  }
+  
+  .favorite-books li:nth-child(3) .book-author {
+    color: #A5D6A7;
+  }
+  
+  .favorite-books li:nth-child(4) .book-title {
+    color: #FFD54F; /* Warm Yellow */
+  }
+  
+  .favorite-books li:nth-child(4) .book-author {
+    color: #FFE082;
+  }
+  
+  .favorite-books li:nth-child(5) .book-title {
+    color: #BA68C8; /* Soft Purple */
+  }
+  
+  .favorite-books li:nth-child(5) .book-author {
+    color: #CE93D8;
+  }
+  
+  /* Hover Effect */
+  .favorite-books li:hover {
+    background-color: #f7fafc;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Favorite Books and Authors</h1>
+    </header>
+    
+    <section>
+      <h2>Top 5 Favorite Books</h2>
+      <ol class="favorite-books">
+        <li>
+          <img src="The-One-Indian-Girl.jpg" alt="The One Indian Girl">
+          <div class="book-info">
+            <span class="book-title">The One Indian Girl</span>
+            <span class="book-author">by Chetan Bhagat</span>
+          </div>
+        </li>
+        <li>
+          <img src="Harry-Potter.jpg" alt="Harry Potter">
+          <div class="book-info">
+            <span class="book-title">Harry Potter</span>
+            <span class="book-author">by J.K. Rowling</span>
+          </div>
+        </li>
+        <li>
+          <img src="400-Days.jpg" alt="400 Days">
+          <div class="book-info">
+            <span class="book-title">400 Days</span>
+            <span class="book-author">by Chetan Bhagat</span>
+          </div>
+        </li>
+        <li>
+          <img src="pride-and-prejudice.jpg" alt="Pride and Prejudice">
+          <div class="book-info">
+            <span class="book-title">Pride and Prejudice</span>
+            <span class="book-author">by Jane Austen</span>
+          </div>
+        </li>
+        <li>
+          <img src="catcher-in-the-rye.jpg" alt="The Catcher in the Rye">
+          <div class="book-info">
+            <span class="book-title">The Catcher in the Rye</span>
+            <span class="book-author">by J.D. Salinger</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </div>
+</body>
+</html>

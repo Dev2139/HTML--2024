@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouseover Color Change</title>
+  <style>
+    p {
+      padding: 20px;
+      font-size: 18px;
+      transition: background-color 0.3s ease; /* Optional: smooth transition for color change */
+    }
+  </style>
+</head>
+<body>
+
+  <p onmouseover="changeColor(this)" onmouseout="resetColor(this)">
+    Hover over this paragraph to change its background color!
+  </p>
+
+  <script>
+    function changeColor(element) {
+      element.style.backgroundColor = "lightblue";
+    }
+
+    function resetColor(element) {
+      element.style.backgroundColor = "";
+    }
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Message</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#message {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #333;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="displayMessage()">Click Me</button>
+        <p id="message"></p> <!-- This is where the message will be displayed -->
+    </div>
+
+    <script>
+        function displayMessage() {
+            document.getElementById('message').textContent = "Hello, welcome to the page!";
+        }
+
+    </script>
+
+</body>
+</html>

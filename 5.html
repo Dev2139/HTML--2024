@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f6f8;
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info, .skills {
+    background-color: #e3f2fd;
+}
+
+.experience, .education {
+    background-color: #e8f5e9;
+}
+
+h2 {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 5px;
+}
+
+p, ul {
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #555555;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.job h3, .school h3 {
+    font-size: 1em;
+    color: #009688;
+}
+
+.job p, .school p {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-column">
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Name: Jane Doe</p>
+                <p>Email: jane.doe@example.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>LinkedIn: linkedin.com/in/janedoe</p>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>HTML & CSS</li>
+                    <li>Data Analysis</li>
+                    <li>Project Management</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3>Software Developer</h3>
+                    <p>Company XYZ, 2022 - Present</p>
+                    <p>Developed web applications, optimized code for performance, and collaborated with cross-functional teams.</p>
+                </div>
+                <div class="job">
+                    <h3>Intern Developer</h3>
+                    <p>Company ABC, 2021 - 2022</p>
+                    <p>Assisted in frontend development, participated in code reviews, and helped maintain project documentation.</p>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div class="school">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p>University of Somewhere, 2018 - 2022</p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
