@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidzWorld</title>
+    <style>
+        body{
+            width: 100vw;
+            height: auto;
+            
+        }
+        .main{
+            background-image: url(kw-background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: 0 120px; */
+            padding-bottom: 130px;
+            background-position: 0 120px;
+        }
+        .navbar{
+            display: flex;
+            flex-direction: row;
+            gap: 70vw;
+        }
+        .logo{
+            padding: 30px;
+            padding-left: 100px;
+            size: 10px;
+        }
+        .cart{
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            font-size: 40px;
+        }
+        .text{
+            color: white;
+            font-size:35px;
+            padding-left: 100px;
+            padding-top: 60px;
+        }
+        .head1{
+            font-style: oblique;
+            font-size: 30px;
+            padding-top: 300px;
+            padding-left: 100px;
+        }
+        .books{
+            display: flex;
+            flex-direction: row;
+        }
+        .book{
+            padding-left: 100px;
+            font-size: 18px;
+            width: 300px;
+        }
+        .games{
+            display: flex;
+            flex-direction: row;
+        }
+        .game{
+            padding-left: 100px;
+            font-size: 25px;
+            width: 500px;
+        }
+        .author{
+            color: rgb(111, 110, 110);
+            font-size: larger;
+        }
+        .price{
+            font-weight: bolder;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            gap: 300px;
+        }
+        .priceb{
+            font-weight: bolder;
+            font-size: 30px;
+            display: flex;
+            flex-direction: row;
+            gap: 230px;
+        }
+        .handmade{
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            padding-left: 100px;
+            font-size: 25px;
+            width: 500px;
+        }
+        .cartw{
+            background-color: rgb(0, 128, 255);
+            width:60px;
+            height: 50px;
+            display: flex;
+            flex-direction: center;
+            border: solid white;
+            border-radius: 10%;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="kw-logo.png" alt="">
+            </div>
+            <div class="cart">
+                <img src="cart-icon.png" alt="">
+                <div>CartItem(0)</div>
+            </div>
+        </div>
+        <div class="text">
+            <h1>Shop.</h1>
+            <h1>Have Fun.</h1>
+            <h1>Repeat.</h1>
+            <h1>#NewAndNow</h1>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="head1"><h1>Discover New Books</h1></div>
+        <div class="books">
+            <div class="book">
+                <div class="image"><img src="book1.png" alt=""></div>
+                <div class="name"><h1>This was our pact</h1></div>
+                <div class="author"><h3>Ryan Andrews</h3></div>
+                <div class="priceb">$7.49
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="image"><img src="book2.png" alt=""></div>
+                <div class="name"><h1>The Famous Five</h1></div>
+                <div class="author"><h3>Guid Blyton</h3></div>
+                <div class="priceb">$4.59
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="image"><img src="book3.png" alt=""></div>
+                <div class="name"><h1>Matilda</h1></div>
+                <div class="author"><h3>Roald Dahi</h3></div>
+                <div class="priceb">$6.80
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="image"><img src="book4.png" alt=""></div>
+                <div class="name"><h1>Harry Potter</h1></div>
+                <div class="author"><h3>JK Rowling</h3></div>
+                <div class="priceb">$10
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="image"><img src="book5.png" alt=""></div>
+                <div class="name"><h1>For Young Readers</h1></div>
+                <div class="author"><h3>Ruskin Bond</h3></div>
+                <div class="priceb">$7.29
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="book">
+                <div class="image"><img src="book6.png" alt=""></div>
+                <div class="name"><h1>Wimpy kid - DIY</h1></div>
+                <div class="author"><h3>Jeff Kinney</h3></div>
+                <div class="priceb">$4.99
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="head1"><h1>Discover New Games</h1></div>
+        <div class="games">
+            <div class="game">
+                <div class="image"><img src="dart-board.png" alt=""></div>
+                <div class="name"><h1>Dart Board</h1></div>
+                <div class="author"><h3>Woodenboard,16 inches</h3></div>
+                <div class="price">$17.49
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="image"><img src="connect-four.png" alt=""></div>
+                <div class="name"><h1>Connect 4</h1></div>
+                <div class="author"><h3>Board game multiplayer</h3></div>
+                <div class="price">$19.99
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="image"><img src="jenga.png" alt=""></div>
+                <div class="name"><h1>Jenga</h1></div>
+                <div class="author"><h3>Woodenblockds, 54 pieces</h3></div>
+                <div class="price">$20.99
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="game">
+                <div class="image"><img src="monopoly.png" alt=""></div>
+                <div class="name"><h1>Monopoly</h1></div>
+                <div class="author"><h3>1.61x15.75x10.51 inches</h3></div>
+                <div class="price">$19.49
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="head1"><h1>Handmade with Love </h1></div>
+        <div class="handmade">
+            <div class="item">
+                <div class="image"><img src="bookmarks.png" alt=""></div>
+                <div class="name"><h1>Bookmarks</h1></div>
+                <div class="author"><h3>Handmade with Love</h3></div>
+                <div class="price">$12.49
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="birthday-card.png" alt=""></div>
+                <div class="name"><h1>Birthday Card</h1></div>
+                <div class="author"><h3>Handmade with Love</h3></div>
+                <div class="price">$19.99
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="stuffed-toy.png" alt=""></div>
+                <div class="name"><h1>Stufed Toys</h1></div>
+                <div class="author"><h3>Handmade with Love</h3></div>
+                <div class="price">$15.99
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image"><img src="dream-catcher.png" alt=""></div>
+                <div class="name"><h1>Dream Catcher Drawing</h1></div>
+                <div class="author"><h3>Handmade with Love</h3></div>
+                <div class="price">$18.49
+                    <div class="cartw"><img src="cart-icon-white.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

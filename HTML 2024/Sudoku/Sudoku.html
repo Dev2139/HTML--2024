@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <STYLE>
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            gap: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+        .table1, .table2{
+            border: solid 2px ;
+        }
+        .green{
+            background-color: #AAD7B6 ;
+        }
+        .first, .second, .third{
+            display: flex;
+            flex-direction: row;
+        }
+        .row1, .row2, .row3{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .num{
+            border: solid 1px gray;
+            width: 20px;
+            text-align: center;
+        }
+        .blank{
+            border: solid 1px gray;
+            width: 20px;
+            text-align: center;
+            color: white;
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="main">
+        <div class="sudoku">
+            <h1>SUDOKU</h1>
+            <div class="table1">
+                <div class="first">
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">8</div>
+                            <div class="blank"></div>
+                            <div class="num">6</div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">4</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">2</div>
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                            <div class="num">3</div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">1</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="num">9</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">6</div>
+                            <div class="num">8</div>
+                        </div>
+                        <div class="row3">
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                            <div class="num">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="green">
+                        <div class="row1">
+                            <div class="num">1</div>
+                            <div class="blank"></div>
+                            <div class="num">8</div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">3</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">7</div>
+                            <div class="blank"></div>
+                            <div class="num">5</div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                            <div class="num">5</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">1</div>
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="blank"></div>
+                            <div class="num">3</div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="num">2</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">5</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">9</div>
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="white">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">6</div>
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="blank"></div>
+                            <div class="num">8</div>
+                            <div class="num">5</div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                            <div class="num">7</div>
+                        </div>
+                        <div class="row2">
+                            <div class="blank"></div>
+                            <div class="num">2</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">6</div>
+                            <div class="blank"></div>
+                            <div class="num">4</div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="blank"></div>
+                            <div class="num">4</div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">8</div>
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                        </div>
+                        <div class="row3">
+                            <div class="blank"></div>
+                            <div class="blank"></div>
+                            <div class="num">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="answer">
+            <h1>ANSWER</h1>
+            <div class="table1">
+                <div class="first">
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                            <div class="num">6</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">5</div>
+                            <div class="num">4</div>
+                            <div class="num">3</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                            <div class="num">9</div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="num">5</div>
+                            <div class="num">4</div>
+                            <div class="num">3</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                            <div class="num">9</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                            <div class="num">6</div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">1</div>
+                            <div class="num">9</div>
+                            <div class="num">2</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">7</div>
+                            <div class="num">6</div>
+                            <div class="num">8</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">4</div>
+                            <div class="num">3</div>
+                            <div class="num">5</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second">
+                    <div class="green">
+                        <div class="row1">
+                            <div class="num">1</div>
+                            <div class="num">9</div>
+                            <div class="num">8</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">4</div>
+                            <div class="num">3</div>
+                            <div class="num">2</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">7</div>
+                            <div class="num">6</div>
+                            <div class="num">5</div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">7</div>
+                            <div class="num">6</div>
+                            <div class="num">5</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">1</div>
+                            <div class="num">9</div>
+                            <div class="num">8</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">4</div>
+                            <div class="num">3</div>
+                            <div class="num">2</div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="num">3</div>
+                            <div class="num">2</div>
+                            <div class="num">4</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">6</div>
+                            <div class="num">5</div>
+                            <div class="num">7</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">9</div>
+                            <div class="num">8</div>
+                            <div class="num">1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third">
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">3</div>
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">6</div>
+                            <div class="num">5</div>
+                            <div class="num">4</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">9</div>
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                        </div>
+                    </div>
+                    <div class="green">
+                        <div class="row1">
+                            <div class="num">9</div>
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">3</div>
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">6</div>
+                            <div class="num">5</div>
+                            <div class="num">4</div>
+                        </div>
+                    </div>
+                    <div class="white">
+                        <div class="row1">
+                            <div class="num">5</div>
+                            <div class="num">4</div>
+                            <div class="num">6</div>
+                        </div>
+                        <div class="row2">
+                            <div class="num">8</div>
+                            <div class="num">7</div>
+                            <div class="num">9</div>
+                        </div>
+                        <div class="row3">
+                            <div class="num">2</div>
+                            <div class="num">1</div>
+                            <div class="num">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
